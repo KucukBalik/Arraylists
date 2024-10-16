@@ -24,9 +24,9 @@ public class Main {
 
         int i = 0;
 
-        for (Integer name : numlist)
+        for (Integer name1 : numlist)
         {
-            System.out.println("The number at index " + numlist.get(i));
+            System.out.println("The number at index " + name1);
             i++;
         }
 
