@@ -1,37 +1,36 @@
 package ie.atu.week5;
-
+import java.util.ArrayList;
 
 import java.sql.Array;
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
 
+    ArrayList<Integer> numlist = new ArrayList<Integer>();
 
-            int[] anArray;
+        System.out.println("Please enter a value to add it on ArrayList: ");
 
-            anArray = new int[10];
-
-            anArray[0] = 100;
-            anArray[1] = 200;
-            anArray[2] = 300;
-            anArray[3] = 400;
-            anArray[4] = 500;
-            anArray[5] = 600;
-            anArray[6] = 700;
-            anArray[7] = 800;
-            anArray[8] = 900;
-
-        System.out.println("Please enter a number for index 10:  \n");
+        numlist.add(100);
+        numlist.add(200);
+        numlist.add(300);
+        numlist.add(400);
+        numlist.add(500);
 
         Scanner sc = new Scanner(System.in);
 
-        anArray[9] = sc.nextInt();
+        numlist.add(sc.nextInt());
 
-            for(int i = 0; i < anArray.length; i++)
-            {
-                System.out.println("Element at index " + i + " " + anArray[i]);
-            }
+        int i = 0;
+
+        for (Integer name : numlist)
+        {
+            System.out.println("The number at index " + numlist.get(i));
+            i++;
+        }
+
+
 
 
     }
